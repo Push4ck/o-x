@@ -1,0 +1,165 @@
+/* Importing Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Titan+One&display=swap');
+
+/* Resetting default styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: var(--main-font);
+    transition: 0.2s ease-in-out;
+}
+
+/* Define CSS custom properties (variables) for color and styling */
+:root {
+    /* hsl colors */
+    --body-background-color: hsl(224, 16%, 13%);
+    --box-background: hsl(223, 17%, 16%);
+    --title-span-color: hsl(345, 100%, 69%);
+    --border-color: hsl(0, 0%, 0%);
+    --turn-color: hsl(345, 100%, 59%);
+    --button-background-color: hsl(179, 93%, 44%);
+    --button-background-color-alt: hsl(179, 93%, 50%);
+    --text-color: hsl(0, 0%, 100%);
+    --win-text-color: hsl(49, 100%, 50%);
+
+    /* font-weight */
+    --normal: 500;
+    --heavy: 700;
+
+    /* font-size */
+    --text-font-small: 1.4rem;
+    --text-font-medium: 1.6rem;
+    --text-font-large: 4rem;
+
+    /* shape-size of O & X */
+    --shape-size: 15vmin;
+
+    /* font-family */
+    --main-font: 'Poppins', sans-serif;
+    --ox-font: 'Titan One', sans-serif;
+}
+
+/* Global styles */
+* {
+    font-family: var(--main-font);
+    transition: 0.2s ease-in-out;
+    user-select: none;
+}
+
+.align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: var(--body-background-color);
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    text-align: center;
+    padding-top: 2vh;
+}
+
+.title {
+    font-size: var(--text-font-large);
+    color: var(--text-color);
+    margin: 3px 0 10px 0;
+}
+
+.title span {
+    color: var(--title-span-color);
+}
+
+/* Turn container styles */
+.turn-container {
+    width: 190px;
+    height: 100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+    color: var(--text-color);
+    font-size: var(--text-font-medium);
+}
+
+.turn-container h3 {
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    color: var(--text-color);
+    font-size: var(--text-font-small);
+}
+
+.turn-container .turn-box {
+    border: 3px solid var(--border-color);
+    font-size: var(--text-font-medium);
+    font-weight: var(--heavy);
+    font-family: var(--ox-font);
+}
+
+.turn-container .turn-box:nth-child(even) {
+    border-right: none;
+}
+
+/* Background slider styles */
+.bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 95px;
+    height: 50px;
+    background-color: var(--turn-color);
+    z-index: -1;
+}
+
+/* Main grid styles */
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 350px;
+    width: 350px;
+    margin: 30px auto;
+    border: 3px solid var(--border-color);
+}
+
+/* Box styles */
+.box {
+    cursor: pointer;
+    font-size: var(--text-font-large);
+    font-weight: var(--heavy);
+    border: 3px solid var(--border-color);
+    color: var(--text-color);
+    font-family: var(--ox-font);
+}
+
+.box:hover {
+    background-color: var(--box-background);
+}
+
+/* Play again button styles */
+#play-again {
+    background-color: var(--button-background-color);
+    padding: 10px 25px;
+    border: 3px solid var(--border-color);
+    font-size: var(--text-font-small);
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Result text styles */
+#results {
+    color: var(--win-text-color);
+    margin-bottom: 20px;
+}
+
+#play-again:hover {
+    padding: 10px 40px;
+    background-color: var(--button-background-color-alt);
+}

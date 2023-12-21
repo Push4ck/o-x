@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set the character set and viewport for responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to the main stylesheet and media query stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/mediaquery.css">
+    <!-- Set the favicon for the website -->
+    <link rel="icon" href="assets/images/favico.png" sizes="32x32" type="images/x-icon">
+    <!-- Set the title of the webpage -->
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    
+    <!-- Header with the game title -->
+    <h1 class="title">Tic <span>Tac</span> Toe</h1>
+
+    <!-- Container displaying the turn for X and O with a background slider -->
+    <div class="turn-container">
+        <h3>Turn For</h3>
+        <div class="turn-box align">X</div>
+        <div class="turn-box align">O</div>
+        <div class="bg"></div>
+    </div>
+
+    <!-- Main grid for the Tic Tac Toe game -->
+    <div class="main-grid">
+        <div class="box align">0</div>
+        <div class="box align">1</div>
+        <div class="box align">2</div>
+        <div class="box align">3</div>
+        <div class="box align">4</div>
+        <div class="box align">5</div>
+        <div class="box align">6</div>
+        <div class="box align">7</div>
+        <div class="box align">8</div>
+    </div>
+
+    <!-- Display the results of the game -->
+    <h2 id="results"></h2>
+
+    <!-- Play Again button to restart the game -->
+    <button id="play-again">Play Again</button>
+
+    <!-- Include the JavaScript file for game functionality -->
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>

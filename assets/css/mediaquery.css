@@ -1,0 +1,169 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /* Adjust body padding for better spacing */
+    body {
+        padding-top: 1vh;
+    }
+
+    /* Adjust title font size for better readability */
+    .title {
+        font-size: var(--text-font-medium);
+    }
+
+    /* Adjust font size for turn container and turn boxes */
+    .turn-container {
+        font-size: var(--text-font-small);
+    }
+
+    /* Adjust font size for individual turn boxes */
+    .turn-container .turn-box {
+        font-size: var(--text-font-small);
+    }
+
+    /* Adjust main grid dimensions for a more compact layout */
+    .main-grid {
+        height: 270px;
+        width: 270px;
+        margin: 20px auto;
+    }
+
+    /* Adjust font size for boxes */
+    .box {
+        font-size: var(--text-font-medium);
+    }
+
+    /* Adjust padding and font size for play again button */
+    #play-again {
+        padding: 10px 15px;
+        font-size: var(--text-font-small);
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 601px to 768px) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    /* Adjust body padding for better spacing */
+    body {
+        padding-top: 1vh;
+    }
+
+    /* Increase title font size and adjust margin for spacing */
+    .title {
+        font-size: var(--text-font-large);
+        margin-bottom: -5px;
+    }
+
+    /* Adjust font size for turn container and adjust margin for spacing */
+    .turn-container {
+        font-size: var(--text-font-small);
+        margin-top: -5px;
+    }
+
+    /* Adjust font size for individual turn boxes */
+    .turn-container .turn-box {
+        font-size: var(--text-font-small);
+    }
+
+    /* Adjust main grid dimensions for a larger layout */
+    .main-grid {
+        height: 350px;
+        width: 350px;
+        margin: 20px auto;
+    }
+
+    /* Adjust font size for boxes */
+    .box {
+        font-size: var(--text-font-medium);
+    }
+
+    /* Adjust font size for result text */
+    #results {
+        font-size: var(--text-font-medium);
+    }
+
+    /* Adjust padding and font size for play again button */
+    #play-again {
+        padding: 10px 15px;
+        font-size: var(--text-font-small);
+    }
+}
+
+/* Medium devices (landscape tablets, 769px to 1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Increase title font size and adjust margins for spacing */
+    .title {
+        font-size: var(--text-font-large);
+        margin-top: -15px;
+        margin-bottom: -10px;
+    }
+
+    /* Adjust font size for turn container and adjust margins for spacing */
+    .turn-container {
+        font-size: var(--text-font-small);
+        margin-top: -10px;
+        margin-bottom: -10px;
+    }
+
+    /* Adjust font size for individual turn boxes */
+    .turn-container .turn-box {
+        font-size: var(--text-font-medium);
+    }
+
+    /* Adjust main grid dimensions for a standard layout */
+    .main-grid {
+        height: 370px;
+        width: 370px;
+        margin: 30px auto;
+    }
+
+    /* Increase font size for boxes */
+    .box {
+        font-size: var(--text-font-large);
+    }
+
+    /* Adjust margin for result text */
+    #results {
+        margin-top: -20px;
+    }
+
+    /* Adjust padding and font size for play again button */
+    #play-again {
+        padding: 10px 25px;
+        font-size: var(--text-font-medium);
+    }
+}
+
+/* Large devices (laptops/desktops, 1025px to 1440px) */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    /* Increase title font size for larger screens */
+    .title {
+        font-size: var(--text-font-large);
+    }
+
+    /* Adjust font size for turn container */
+    .turn-container {
+        font-size: var(--text-font-medium);
+    }
+
+    /* Adjust font size for individual turn boxes */
+    .turn-container .turn-box {
+        font-size: var(--text-font-medium);
+    }
+
+    /* Adjust main grid dimensions for a standard layout */
+    .main-grid {
+        height: 370px;
+        width: 370px;
+        margin: 30px auto;
+    }
+
+    /* Increase font size for boxes */
+    .box {
+        font-size: var(--text-font-large);
+    }
+
+    /* Adjust padding and font size for play again button */
+    #play-again {
+        padding: 15px 30px;
+        font-size: var(--text-font-medium);
+    }
+}
